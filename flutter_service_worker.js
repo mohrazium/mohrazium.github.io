@@ -7,7 +7,7 @@ const RESOURCES = {
 "manifest.json": "b0b13939da804865959ed71f4fc8a467",
 "index.html": "e922052e53d2f4f0c6efa4f85bc18495",
 "/": "e922052e53d2f4f0c6efa4f85bc18495",
-"main.dart.js": "44cb761dcd04ca33e1f7dc0d93469905",
+"main.dart.js": "01789f1b829a9407134101f14b871f32",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/fonts/FontManifest.json": "db9016be98f2f458c956af9a903066b1",
 "assets/AssetManifest.json": "107b90ab361a4b88d589f0990480a1fe",
