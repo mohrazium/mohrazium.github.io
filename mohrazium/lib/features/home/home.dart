@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mohrazium/common/common.dart';
 import 'package:mohrazium/localization/localization.dart';
-
+import 'package:http/http.dart' as http;
 part 'presentation/pages/home_page.dart';
 part 'presentation/views/home_view_large.dart';
 

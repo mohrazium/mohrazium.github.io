@@ -25,6 +25,7 @@ dependencies:
   flutter_mobx: ^2.0.6+1
   flutter_modular: ^5.0.3
   flutter_multi_formatter: ^2.5.1
+  http: ^0.13.5
   intl: ^0.17.0
   json_annotation: ^4.6.0
   json_serializable: ^6.3.1
