@@ -16,8 +16,6 @@ dependencies:
   carousel_slider: ^4.1.1
   eva_icons_flutter: ^3.1.0
   fast_i18n: ^5.12.6
-  floy:
-    path: /home/mohrazium/Projects/Flutter/Plugins/Floy-Workspace/floy/
   flutter:
     sdk: flutter
   flutter_localizations:

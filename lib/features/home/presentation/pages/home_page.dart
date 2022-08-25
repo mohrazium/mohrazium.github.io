@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
       child: Builder(builder: (BuildContext context) {
         // ignore: always_specify_types
         var translator = Translations.of(context);
-        return Floy(
+        return Scaffold(
             appBar: AppBar(
               toolbarHeight: 80,
               title: Row(
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
               elevation: 0,
               backgroundColor: Colors.transparent,
             ),
-            routerWidget: const HomeViewLarge());
+            body: const HomeViewLarge());
       }),
     );
 

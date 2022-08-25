@@ -36,13 +36,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.8.2"
-  badges:
-    dependency: transitive
-    description:
-      name: badges
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.3"
   base58check:
     dependency: transitive
     description:
@@ -260,13 +253,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
-  floy:
-    dependency: "direct main"
-    description:
-      path: "/home/mohrazium/Projects/Flutter/Plugins/Floy-Workspace/floy/"
-      relative: false
-    source: path
-    version: "0.0.1"
   flutter:
     dependency: "direct main"
     description: flutter
