@@ -1,5 +1,5 @@
 library mohrazium.features;
 
-export 'home/home.dart';
+export 'portfolio/portfolio.dart';
 
 export 'splash/splash.dart';

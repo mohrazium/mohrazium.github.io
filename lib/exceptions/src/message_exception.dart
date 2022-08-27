@@ -1,4 +1,4 @@
-part of zoncan.exceptions;
+part of mohrazium.exceptions;
 
 class MessageException implements Failure {
   late final String? message;
@@ -16,15 +16,14 @@ class MessageException implements Failure {
       case ExceptionLevel.INFO:
       case ExceptionLevel.NOT_FOUND:
       case ExceptionLevel.IGNORE:
-        logger.info("${level.name} message was thrown with content : $message");
+        debugPrint("${level.name} message was thrown with content : $message");
         break;
       case ExceptionLevel.WARNING:
-        logger.warning(
-            "${level.name} message was thrown with content : $message");
+       debugPrint(
+            "WARNING : ${level.name} message was thrown with content : $message");
         break;
       case ExceptionLevel.ERROR:
-        logger
-            .error("${level.name} message was thrown with content : $message");
+       debugPrint("ERROR : ${level.name} message was thrown with content : $message");
         break;
     }
   }

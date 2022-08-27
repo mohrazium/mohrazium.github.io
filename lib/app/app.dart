@@ -12,7 +12,7 @@ import 'package:mohrazium/common/common.dart';
 import 'package:mohrazium/config/config.dart'
     show Injector, LoggerService, Routing, logger;
 import 'package:mohrazium/constants/constants.dart';
-import 'package:mohrazium/features/features.dart' show Home, Splash;
+import 'package:mohrazium/features/features.dart' show Home, Portfolio, Splash;
 import 'package:mohrazium/localization/localization.dart'
     show LocaleSettings, TranslationProvider, Translations;
 
@@ -38,7 +38,7 @@ class App extends Module {
         ),
         ModuleRoute(
           Routing.routes().home.path,
-          module: Home(),
+          module: Portfolio(),
           transition: TransitionType.fadeIn,
           duration: kAnimationDuration,
         ),

@@ -9,5 +9,4 @@ import 'package:flutter/foundation.dart';
 import 'package:logging/logging.dart';
 
 part 'src/injection/injector.dart';
-part 'src/logger/logger_service.dart';
 part 'src/router/routes.dart';

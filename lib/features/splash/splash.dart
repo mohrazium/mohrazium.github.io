@@ -6,8 +6,8 @@ import 'package:mohrazium/config/config.dart';
 
 import '../../common/common.dart';
 
-part 'presentation/pages/splash_page.dart';
-part 'presentation/views/splash_view.dart';
+part 'pages/splash_page.dart';
+part 'views/splash_view.dart';
 
 class Splash extends Module {
   @override

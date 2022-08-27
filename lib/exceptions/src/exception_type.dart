@@ -1,6 +1,6 @@
 // ignore_for_file: constant_identifier_names
 
-part of zoncan.exceptions;
+part of mohrazium.exceptions;
 
 enum ExceptionType {
   NONE,

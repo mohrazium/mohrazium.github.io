@@ -27,14 +27,12 @@ class _MohraziumState extends State<Mohrazium> {
       mainContext.config = mainContext.config.clone(
         isSpyEnabled: true,
       );
-      mainContext.spy((e) => logger.info(e.toString()));
+      mainContext.spy((e) => debugPrint(e.toString()));
     }
 
     Modular.setNavigatorKey(NavigatorHelper.maiNavigatorKey);
 
-    Modular.setInitialRoute(Routing.routes().splash.path);
-
-    LoggerService.setup();
+    Modular.setInitialRoute(Routing.routes().home.path);
 
     Modular.setObservers([
       NavigatorHelper.routeObserver,
@@ -43,11 +41,14 @@ class _MohraziumState extends State<Mohrazium> {
 
     botToastBuilder = BotToastInit();
 
-
-    Modular.to.addListener(() =>
-        logger.info("Route changed to ${NavigatorHelper.currentRoute()}"));
+    Modular.to.addListener(
+        () => debugPrint("Route changed to ${NavigatorHelper.currentRoute()}"));
 
     appController.initState();
+
+    Future.delayed(const Duration(milliseconds: 200)).then((value) {
+      LocaleSettings.setLocaleRaw("fa");
+    });
   }
 
   @override
@@ -75,7 +76,6 @@ class _MohraziumState extends State<Mohrazium> {
                     .show(context: context, text: appController.loadingText);
               } else {
                 LoadingScreen.instance.hide();
-                print(" Hide Loading");
               }
             });
           },

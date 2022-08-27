@@ -5,7 +5,7 @@
  * Locales: 2
  * Strings: 84 (42.0 per locale)
  *
- * Built on 2022-08-24 at 21:17 UTC
+ * Built on 2022-08-27 at 16:43 UTC
  */
 
 import 'package:flutter/widgets.dart';
@@ -311,7 +311,7 @@ class _StringsEn {
 	String get languageCode => 'en';
 	String get languageName => 'English';
 	String get languageChanged => 'Default language changed to English.';
-	String get appName => 'Zoncan';
+	String get appName => 'Mohrazium';
 	String get appDescription => 'Calculate with Zoncan';
 	String get appDescriptor => 'Financial reporting and management system';
 	String welcome({required Object fullName}) => 'Welcome $fullName to Zoncan';
@@ -381,7 +381,7 @@ class _StringsFa implements _StringsEn {
 	@override String get languageCode => 'fa';
 	@override String get languageName => 'فارسی';
 	@override String get languageChanged => 'زبان پیش فرض به فارسی تغییر کرد..';
-	@override String get appName => 'زونکن';
+	@override String get appName => 'محرزیوم';
 	@override String get appDescription => 'با زونکن حساب و کتاب کن';
 	@override String get appDescriptor => 'سیستم گزارش گیری و مدیریت مالی';
 	@override String welcome({required Object fullName}) => '$fullName به زونکن خوش آمدید';
@@ -441,7 +441,7 @@ extension on _StringsEn {
 			'languageCode': 'en',
 			'languageName': 'English',
 			'languageChanged': 'Default language changed to English.',
-			'appName': 'Zoncan',
+			'appName': 'Mohrazium',
 			'appDescription': 'Calculate with Zoncan',
 			'appDescriptor': 'Financial reporting and management system',
 			'welcome': ({required Object fullName}) => 'Welcome $fullName to Zoncan',
@@ -490,7 +490,7 @@ extension on _StringsFa {
 			'languageCode': 'fa',
 			'languageName': 'فارسی',
 			'languageChanged': 'زبان پیش فرض به فارسی تغییر کرد..',
-			'appName': 'زونکن',
+			'appName': 'محرزیوم',
 			'appDescription': 'با زونکن حساب و کتاب کن',
 			'appDescriptor': 'سیستم گزارش گیری و مدیریت مالی',
 			'welcome': ({required Object fullName}) => '$fullName به زونکن خوش آمدید',

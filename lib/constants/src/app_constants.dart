@@ -1,6 +1,6 @@
-part of zoncan.constants;
+part of mohrazium.constants;
 
-const kBorderRadius = 10.0;
+const kBorderRadius = 25.0;
 const kSpacing = 20.0;
 const kPadding = 15.0;
 const kMargin = 10.0;

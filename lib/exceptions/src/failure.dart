@@ -1,3 +1,3 @@
-part of zoncan.exceptions;
+part of mohrazium.exceptions;
 
 abstract class Failure implements Exception {}

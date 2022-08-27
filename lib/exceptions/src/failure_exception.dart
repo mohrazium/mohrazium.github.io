@@ -1,6 +1,6 @@
 // ignore_for_file: constant_identifier_names
 
-part of zoncan.exceptions;
+part of mohrazium.exceptions;
 
 class FailureException implements Failure {
   late final String? failureMessage;
@@ -20,12 +20,12 @@ class FailureException implements Failure {
 
   void _handleException() {
     if (error is Exception) {
-      logger.error("${error.runtimeType} with an error => ${error.toString()}");
+      debugPrint("ERROR:${error.runtimeType} with an error => ${error.toString()}");
     } else if (error is ExceptionLevel) {
       if (error == ExceptionLevel.NOT_FOUND) {
-        logger.info(failureMessage ?? "Your object is null or not found!");
+        debugPrint(failureMessage ?? "Your object is null or not found!");
       } else if (error == ExceptionLevel.IGNORE) {
-        logger.info(failureMessage ?? "Your object ignored.");
+        debugPrint(failureMessage ?? "Your object ignored.");
       }
     }
   }

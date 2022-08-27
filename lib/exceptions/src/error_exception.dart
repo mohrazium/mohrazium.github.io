@@ -1,4 +1,4 @@
-part of zoncan.exceptions;
+part of mohrazium.exceptions;
 
 class ErrorException extends FailureException {
   final ExceptionType type;

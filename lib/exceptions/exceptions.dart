@@ -1,5 +1,6 @@
-library zoncan.exceptions;
+library mohrazium.exceptions;
 
+import 'package:flutter/foundation.dart';
 import 'package:mohrazium/config/config.dart' show logger;
 
 part 'src/exceptions_level.dart';
