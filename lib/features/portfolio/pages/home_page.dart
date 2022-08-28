@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         color: Theme.of(context).splashColor,
                         borderRadius: const BorderRadius.all(
                             Radius.circular(kBorderRadius)),
-                        height: 800,
+                        height: MediaQuery.of(context).size.height * 0.90,
                         width: 1000,
                         child: const RouterOutlet(),
                       ),

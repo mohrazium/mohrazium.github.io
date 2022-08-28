@@ -74,6 +74,9 @@ class ErrorException extends FailureException {
       case ExceptionType.NotMATCH:
         // TODO: Handle this case.
         break;
+      case ExceptionType.NONE:
+        // TODO: Handle this case.
+        break;
     }
     return "$msg ${errorMessage ?? ""}";
   }

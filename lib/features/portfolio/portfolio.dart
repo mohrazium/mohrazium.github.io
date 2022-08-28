@@ -20,11 +20,13 @@ import 'package:mohrazium/exceptions/exceptions.dart';
 import 'package:mohrazium/features/features.dart';
 import 'package:mohrazium/localization/localization.dart';
 import 'package:http/http.dart' as http;
+import 'package:shimmer/shimmer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 part 'pages/home_page.dart';
 part 'views/home_view_large.dart';
 part 'views/about_me_view_large.dart';
+part 'views/about_me_view_medium.dart';
 part 'controllers/home_controller.dart';
 part 'controllers/about_me_controller.dart';
 part 'pages/about_me_page.dart';

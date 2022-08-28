@@ -10,7 +10,7 @@ class AboutMeViewLarge extends StatelessWidget {
     return Builder(builder: (context) {
       var translator = Translations.of(context);
       return Observer(builder: (context) {
-        return Column(
+        Widget content = Column(
           children: [
             Expanded(
               flex: 4,
@@ -190,10 +190,6 @@ class AboutMeViewLarge extends StatelessWidget {
                         borderColor: Theme.of(context).colorScheme.primary,
                         elevation: 5.0,
                         cacheImage: false,
-                        onTap: () {
-                          // _launchMailToMe();
-                          print(controller.model.toString());
-                        },
                         showInitialTextAbovePicture: true,
                       ),
                     ),
@@ -203,179 +199,196 @@ class AboutMeViewLarge extends StatelessWidget {
             ),
             Expanded(
               flex: 6,
-              child: Container(
-                color: Colors.transparent,
-                child: Row(
-                  children: [
-                    Expanded(
-                        flex: 6,
-                        child: Padding(
-                          padding: const EdgeInsets.all(kPadding),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const SizedBox(height: kSpacing),
-                              Text.rich(
-                                const TextSpan(text: "درباره ی من"),
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                    color:
-                                        Theme.of(context).colorScheme.primary,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: Theme.of(context)
-                                        .textTheme
-                                        .headline5
-                                        ?.fontSize),
-                              ),
-                              const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.aboutMe),
-                                textAlign: TextAlign.justify,
-                                style: TextStyle(
-                                    fontSize: Theme.of(context)
-                                        .textTheme
-                                        .headline6
-                                        ?.fontSize),
-                              ),
-                            ],
-                          ),
-                        )),
-                    Expanded(
-                        flex: 4,
-                        child: Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                const SizedBox(height: kSpacing * 4),
-                                Text.rich(
-                                  const TextSpan(text: "وضیعت"),
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .secondary,
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                                const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  const TextSpan(text: "محل سکونت"),
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .secondary,
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                                const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  const TextSpan(text: "آدرس"),
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .secondary,
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                                const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  const TextSpan(text: "ایمیل"),
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .secondary,
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                                const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  const TextSpan(text: "سن"),
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .secondary,
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              width: kSpacing,
-                            ),
-                            Column(
+              child: SingleChildScrollView(
+                child: Container(
+                  color: Colors.transparent,
+                  child: Row(
+                    children: [
+                      Expanded(
+                          flex: 6,
+                          child: Padding(
+                            padding: const EdgeInsets.all(kPadding),
+                            child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const SizedBox(height: kSpacing * 4),
+                                const SizedBox(height: kSpacing),
                                 Text.rich(
-                                  TextSpan(text: controller.model.status),
+                                  const TextSpan(text: "درباره ی من"),
+                                  textAlign: TextAlign.right,
                                   style: TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
+                                      fontWeight: FontWeight.bold,
                                       fontSize: Theme.of(context)
                                           .textTheme
-                                          .bodyLarge
+                                          .headline5
                                           ?.fontSize),
                                 ),
                                 const SizedBox(height: kSpacing),
                                 Text.rich(
-                                  TextSpan(text: controller.model.city),
+                                  TextSpan(text: controller.model.aboutMe),
+                                  textAlign: TextAlign.justify,
                                   style: TextStyle(
                                       fontSize: Theme.of(context)
                                           .textTheme
-                                          .bodyLarge
+                                          .headline6
                                           ?.fontSize),
                                 ),
                                 const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  TextSpan(text: controller.model.address),
-                                  style: TextStyle(
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                                const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  TextSpan(text: controller.model.email),
-                                  style: TextStyle(
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
-                                const SizedBox(height: kSpacing),
-                                Text.rich(
-                                  TextSpan(
-                                      text: controller.model.age.toString()),
-                                  style: TextStyle(
-                                      fontSize: Theme.of(context)
-                                          .textTheme
-                                          .bodyLarge
-                                          ?.fontSize),
-                                ),
+                                ElevatedButton(
+                                    onPressed: () {
+                                      controller.openUrl(Urls.resume);
+                                    },
+                                    child: Text("دریافت رزومه"))
                               ],
                             ),
-                          ],
-                        ))
-                  ],
+                          )),
+                      Expanded(
+                          flex: 4,
+                          child: Row(
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text.rich(
+                                    const TextSpan(text: "وضیعت"),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary,
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    const TextSpan(text: "محل سکونت"),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary,
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    const TextSpan(text: "آدرس"),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary,
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    const TextSpan(text: "ایمیل"),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary,
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    const TextSpan(text: "سن"),
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .secondary,
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                width: kSpacing,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text.rich(
+                                    TextSpan(text: controller.model.status),
+                                    style: TextStyle(
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    TextSpan(text: controller.model.city),
+                                    style: TextStyle(
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    TextSpan(text: controller.model.address),
+                                    style: TextStyle(
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    TextSpan(text: controller.model.email),
+                                    style: TextStyle(
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                  const SizedBox(height: kSpacing),
+                                  Text.rich(
+                                    TextSpan(
+                                        text: controller.model.age.toString()),
+                                    style: TextStyle(
+                                        fontSize: Theme.of(context)
+                                            .textTheme
+                                            .bodyLarge
+                                            ?.fontSize),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ))
+                    ],
+                  ),
                 ),
               ),
             ),
           ],
         );
+
+        if (controller.model.fullName == null) {
+          return Shimmer.fromColors(
+            baseColor: Colors.grey.withAlpha(150),
+            highlightColor: Colors.grey.withAlpha(20),
+            enabled: true,
+            child: content,
+          );
+        } else {
+          return content;
+        }
       });
     });
   }

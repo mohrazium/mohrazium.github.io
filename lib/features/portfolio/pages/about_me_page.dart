@@ -17,6 +17,12 @@ class _AboutMePageState extends State<AboutMePage> {
 
   @override
   Widget build(BuildContext context) {
-    return AboutMeViewLarge(controller: aboutMeController);
+    return FloyResponsive(
+      extraSmallPage: AboutMeViewMedium(controller: aboutMeController),
+      smallPage: AboutMeViewMedium(controller: aboutMeController),
+      mediumSmallPage: AboutMeViewMedium(controller: aboutMeController),
+      mediumPage: AboutMeViewLarge(controller: aboutMeController),
+      largePage: AboutMeViewLarge(controller: aboutMeController),
+    );
   }
 }
