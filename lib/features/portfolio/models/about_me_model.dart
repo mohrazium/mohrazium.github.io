@@ -95,4 +95,9 @@ class AboutMeModel {
     data['linkto_bitbucket'] = this.linktoBitbucket;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'AboutMeModel(name: $name, family: $family, fullName: $fullName, nickName: $nickName, age: $age, phoneNumber: $phoneNumber, email: $email, aboutMe: $aboutMe, profileUrl: $profileUrl, city: $city, address: $address, status: $status, headline: $headline, intrestedIn: $intrestedIn, linktoTwitter: $linktoTwitter, linktoLinkedin: $linktoLinkedin, linktoInstagram: $linktoInstagram, linktoTelegram: $linktoTelegram, linktoGitlab: $linktoGitlab, linktoGithub: $linktoGithub, linktoBitbucket: $linktoBitbucket)';
+  }
 }

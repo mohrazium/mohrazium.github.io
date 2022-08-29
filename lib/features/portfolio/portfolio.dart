@@ -33,6 +33,7 @@ part 'pages/about_me_page.dart';
 part 'models/about_me_model.dart';
 part 'services/about_me_service.dart';
 part 'portfolio.g.dart';
+part 'widgets/rich_text_box.dart';
 
 class Portfolio extends Module {
   @override

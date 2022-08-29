@@ -45,8 +45,8 @@ class AboutMeViewMedium extends StatelessWidget {
                           Column(
                             children: [
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.fullName),
+                             RichLable(
+                                text: controller.model.fullName,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -57,8 +57,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.headline),
+                             RichLable(
+                                text: controller.model.headline,
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -69,10 +69,10 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(
+                             RichLable(
+                                
                                     text:
-                                        "علاقمند به ${controller.model.intrestedIn}"),
+                                        "علاقمند به ${controller.model.intrestedIn}",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: Theme.of(context)
@@ -189,9 +189,8 @@ class AboutMeViewMedium extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const SizedBox(height: kSpacing),
-                      Text.rich(
-                        const TextSpan(text: "درباره ی من"),
-                        textAlign: TextAlign.right,
+                     RichLable(
+                         text: "درباره ی من",
                         style: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                             fontWeight: FontWeight.bold,
@@ -201,9 +200,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                 ?.fontSize),
                       ),
                       const SizedBox(height: kSpacing),
-                      Text.rich(
-                        TextSpan(text: controller.model.aboutMe),
-                        textAlign: TextAlign.justify,
+                     RichLable(
+                        text: controller.model.aboutMe,
                         style: TextStyle(
                             fontSize: Theme.of(context)
                                 .textTheme
@@ -222,8 +220,8 @@ class AboutMeViewMedium extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               const SizedBox(height: kSpacing * 4),
-                              Text.rich(
-                                const TextSpan(text: "وضیعت"),
+                             RichLable(
+                                 text: "وضیعت",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -234,8 +232,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                const TextSpan(text: "محل سکونت"),
+                             RichLable(
+                                 text: "محل سکونت",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -246,8 +244,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                const TextSpan(text: "آدرس"),
+                             RichLable(
+                                 text: "آدرس",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -258,8 +256,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                const TextSpan(text: "ایمیل"),
+                             RichLable(
+                                 text: "ایمیل",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -270,8 +268,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                const TextSpan(text: "سن"),
+                             RichLable(
+                                 text: "سن",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color:
@@ -290,8 +288,8 @@ class AboutMeViewMedium extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const SizedBox(height: kSpacing * 4),
-                              Text.rich(
-                                TextSpan(text: controller.model.status),
+                             RichLable(
+                                text: controller.model.status,
                                 style: TextStyle(
                                     fontSize: Theme.of(context)
                                         .textTheme
@@ -299,8 +297,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.city),
+                             RichLable(
+                                text: controller.model.city,
                                 style: TextStyle(
                                     fontSize: Theme.of(context)
                                         .textTheme
@@ -308,8 +306,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.address),
+                             RichLable(
+                                text: controller.model.address,
                                 style: TextStyle(
                                     fontSize: Theme.of(context)
                                         .textTheme
@@ -317,8 +315,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.email),
+                             RichLable(
+                                text: controller.model.email,
                                 style: TextStyle(
                                     fontSize: Theme.of(context)
                                         .textTheme
@@ -326,8 +324,8 @@ class AboutMeViewMedium extends StatelessWidget {
                                         ?.fontSize),
                               ),
                               const SizedBox(height: kSpacing),
-                              Text.rich(
-                                TextSpan(text: controller.model.age.toString()),
+                             RichLable(
+                                text: controller.model.age.toString(),
                                 style: TextStyle(
                                     fontSize: Theme.of(context)
                                         .textTheme
